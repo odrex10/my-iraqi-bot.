@@ -7,7 +7,7 @@ st.title("🤖 مراسل - المساعد الذكي العربي")
 st.write("مساعدك العربي الشامل")
 
 # استخدام المفتاح من الإعدادات الآمنة في Streamlit
-api_key = st.secrets.get("GROQ_API_KEY")
+api_key = st.secrets["GROQ_API_KEY"]
 
 if api_key:
     client = Groq(api_key=api_key)
